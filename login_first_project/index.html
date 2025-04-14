@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Order delicious pizzas online from Pizza Hut. Fast delivery, great deals, and fresh ingredients." name="description"/>
+<meta content="#e50914" name="theme-color"/>
+<title>Pizza Hut - Order Online</title>
+<link href="style.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="manifest.json" rel="manifest"/></head>
+<body>
+<header class="header" role="banner">
+<div class="container">
+<h1 class="logo">
+<span aria-hidden="true">🍕</span> Pizza Hut
+      </h1>
+<nav aria-label="Main navigation" class="nav" role="navigation">
+<ul>
+<li><a class="nav-link" href="#menu">Menu</a></li>
+<li><a class="nav-link" href="#deals">Deals</a></li>
+<li><a class="nav-link" href="#locations">Locations</a></li>
+<li><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</nav>
+<div class="header-actions">
+<a class="btn btn-primary" href="#order">Order Now</a>
+<div class="cart-icon">
+<button aria-controls="cart-dropdown" aria-expanded="false" aria-label="Shopping cart" id="cart-toggle">
+<i aria-hidden="true" class="fas fa-shopping-cart"></i>
+<span id="cart-count">0</span>
+</button>
+<div aria-hidden="true" aria-labelledby="cart-toggle" class="cart-dropdown" id="cart-dropdown" role="region"><div id="cart-items-list"></div>
+<div class="cart-items" id="cart-items" role="list">
+<!-- Cart items will be added here dynamically -->
+</div>
+<div class="cart-total">
+              Total: ₹<span id="cart-total">0.00</span>
+</div>
+<div class="cart-promo"><input id="promo-code" placeholder="Enter Promo Code"/><button class="btn apply-promo" id="apply-promo">Apply</button></div><div class="promo-message" id="promo-msg"></div><a class="btn btn-primary checkout-btn" href="new.html">Checkout</a>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main id="main-content">
+<section aria-label="Hero section" class="hero" id="home">
+<div class="hero-overlay">
+<div class="hero-content">
+<h2>Hot, Fresh &amp; Fast <span aria-hidden="true">🍕</span></h2>
+<p>Get your favorite pizza delivered in no time – fresh from our oven to your door.</p>
+<div class="hero-buttons">
+<a class="btn btn-primary" href="#order">Order Now</a>
+<a class="btn btn-secondary" href="#menu">View Menu</a>
+</div>
+</div>
+</div>
+</section>
+<section aria-label="Special offers" class="specials" id="deals">
+<div class="container">
+<h2 class="section-title"><span aria-hidden="true">🔥</span> Featured Specials</h2>
+<div class="specials-grid">
+<article class="special-card">
+<img alt="Buy one get one free pizza deal" height="300" loading="lazy" src="https://media.istockphoto.com/id/2159019591/photo/hand-with-knife-citting-pizza.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=c7qDpI6k1E7p2n1DKKd4-9dgZbPHeR2UxHW_Cd-jLy8=" width="400"/>
+<h3>Buy 1 Get 1 Free</h3>
+<p>Order any large pizza and get one absolutely free. Available for a limited time!</p>
+<a class="btn-card" href="#order">Order Now</a>
+</article>
+<article class="special-card">
+<img alt="Family feast combo with pizza, wings and drinks" height="300" loading="lazy" src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" width="400"/>
+<h3>Family Feast Combo</h3>
+<p>2 Large Pizzas, Wings, and a 2L Drink for just ₹600. Perfect for game night!</p>
+<a class="btn-card" href="#order">Grab Deal</a>
+</article>
+<article class="special-card">
+<img alt="Personal pizza and drink lunch special" height="300" loading="lazy" src="https://media.istockphoto.com/id/1224219335/photo/cola-and-tasty-homemade-pizza.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=A_uPKwDM9CApKO4XYmLOvAQD3mim0OKrqxREr--ypI8=" width="400"/>
+<h3>Lunch for One</h3>
+<p>1 Personal Pizza + Drink for only ₹99. Quick, delicious, and satisfying.</p>
+<a class="btn-card" href="#order">View More</a>
+</article>
+</div>
+</div>
+</section>
+<section aria-label="Menu preview" class="menu-preview" id="menu">
+<div class="container">
+<h2 class="section-title"><span aria-hidden="true">🍴</span> Explore Our Menu</h2>
+<div aria-label="Menu items" class="menu-scroll" role="region" tabindex="0">
+<a class="menu-item" href="menu.html#pizza">
+<img alt="Assortment of pizzas" height="200" loading="lazy" src="https://media.istockphoto.com/id/1387025009/photo/top-view-three-delicious-italian-pizzas-on-the-table.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=1x5GxDEQ4SJ6mkFlsPom8qtL9_GcVA9_xYW41riZMo0=" width="300"/>
+<h3>Pizza</h3>
+</a>
+<a class="menu-item" href="menu.html#sides">
+<img alt="Side dishes including wings and fries" height="200" loading="lazy" src="https://media.istockphoto.com/id/1309966291/photo/delivery-fast-food-concept.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=TcY_bJDPphPUl1X9PtsWXfLBdmRRcd9wbiOHbuN8O9k=" width="300"/>
+<h3>Sides</h3>
+</a>
+<a class="menu-item" href="menu.html#desserts">
+<img alt="Dessert options" height="200" loading="lazy" src="https://media.istockphoto.com/id/1147314416/photo/sweet-christmas-dessert.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=-JndOtSbvIYIyJ3YBqYdRniPdkLklJYnw3NyZIFZSJw=" width="300"/>
+<h3>Desserts</h3>
+</a>
+<a class="menu-item" href="menu.html#drinks">
+<img alt="Beverage options" height="200" loading="lazy" src="https://media.istockphoto.com/id/500903136/photo/close-up-cool-colorful-drink-in-vintage-style.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=zxNZeCq4lp98OXUevuz84S8-A_8Qbq2ilLy17p2UgUM=" width="300"/>
+<h3>Drinks</h3>
+</a>
+</div>
+</div>
+</section>
+<section aria-label="Daily Pizza Suggestion" class="daily-suggestion">
+<div class="container">
+<h2 class="section-title">🍕 Pizza of the Day</h2>
+<div class="suggestion-box">
+<p id="suggested-pizza">Loading...</p>
+<button class="btn" id="reroll-suggestion">🎲 Feeling Lucky?</button>
+</div>
+</div>
+</section>
+<script>
+  const pizzaOptions = [
+    "Margherita with Extra Cheese",
+    "Farmhouse Delight",
+    "Pepperoni and Jalapeno",
+    "BBQ Chicken Supreme",
+    "Paneer Tikka Pizza",
+    "Mushroom & Olive Fiesta",
+    "Mexican Green Wave",
+    "Triple Cheese Melt",
+    "Veggie Overload",
+    "Spicy Peri Peri Paneer"
+  ];
+
+  function getDailyPizza() {
+    const today = new Date().toISOString().split('T')[0];
+    let stored = JSON.parse(localStorage.getItem("dailyPizza") || "{}");
+
+    if (stored.date === today && stored.choice) {
+      return stored.choice;
+    } else {
+      const choice = pizzaOptions[Math.floor(Math.random() * pizzaOptions.length)];
+      localStorage.setItem("dailyPizza", JSON.stringify({ date: today, choice }));
+      return choice;
+    }
+  }
+
+  const suggestionText = document.getElementById("suggested-pizza");
+  suggestionText.textContent = getDailyPizza();
+
+  document.getElementById("reroll-suggestion")?.addEventListener("click", () => {
+    const choice = pizzaOptions[Math.floor(Math.random() * pizzaOptions.length)];
+    suggestionText.textContent = choice;
+    localStorage.setItem("dailyPizza", JSON.stringify({ date: new Date().toISOString().split('T')[0], choice }));
+  });
+</script>
+<section aria-label="Build your pizza" class="build-pizza" id="order">
+<div class="container">
+<h2 class="section-title"><span aria-hidden="true">🍕</span> Build Your Own Pizza</h2>
+<form aria-label="Pizza customization form" class="pizza-form" id="pizza-form">
+<fieldset class="form-group">
+<legend><h3>Choose Your Size</h3></legend>
+<label><input name="size" required="" type="radio" value="small"/> Small</label>
+<label><input name="size" type="radio" value="medium"/> Medium</label>
+<label><input name="size" type="radio" value="large"/> Large</label>
+</fieldset>
+<fieldset class="form-group">
+<legend><h3>Select Crust</h3></legend>
+<label><input name="crust" required="" type="radio" value="thin"/> Thin</label>
+<label><input name="crust" type="radio" value="pan"/> Pan</label>
+<label><input name="crust" type="radio" value="stuffed"/> Stuffed</label>
+</fieldset>
+<fieldset class="form-group">
+<legend><h3>Pick Your Toppings</h3></legend>
+<label><input name="toppings" type="checkbox" value="pepperoni"/> Pepperoni</label>
+<label><input name="toppings" type="checkbox" value="mushrooms"/> Mushrooms</label>
+<label><input name="toppings" type="checkbox" value="onions"/> Onions</label>
+<label><input name="toppings" type="checkbox" value="bacon"/> Bacon</label>
+<label><input name="toppings" type="checkbox" value="extra-cheese"/> Garlic Cheese</label>
+</fieldset>
+<div class="price-display">
+<strong>Total Price:</strong> ₹<span id="live-price">0.00</span>
+</div>
+<button class="btn-submit" id="save-fav" type="button">⭐ Save This Pizza</button><button class="btn-submit" type="submit">Add to Order</button>
+</form>
+</div>
+</section>
+<section aria-label="Customer testimonials" class="testimonials">
+<div class="container">
+<h2 class="section-title"><span aria-hidden="true">💬</span> What Our Customers Say</h2>
+<div class="testimonial-grid">
+<article class="testimonial-card">
+<blockquote class="testimonial-text">
+              "Best pizza in town! The crust is perfect, and the toppings are always fresh."
+            </blockquote>
+<div class="testimonial-author">— Sarah J.</div>
+</article>
+<article class="testimonial-card">
+<blockquote class="testimonial-text">
+              "I build my own pizza every weekend and it's always amazing. Highly recommend!"
+            </blockquote>
+<div class="testimonial-author">— Marcus D.</div>
+</article>
+<article class="testimonial-card">
+<blockquote class="testimonial-text">
+              "Fast delivery, great service, and super cheesy pizzas! What more could I ask for?"
+            </blockquote>
+<div class="testimonial-author">— Priya K.</div>
+</article>
+</div>
+</div>
+</section>
+<section aria-label="Our story" class="our-story">
+<div class="container">
+<div class="story-content">
+<article class="story-text">
+<h2 class="section-title"><span aria-hidden="true">🍕</span> Our Story</h2>
+<p>
+              At PizzaHut, we're not just about pizza—we're about passion, flavor, and creating unforgettable moments. 
+              Since day one, we've been dedicated to crafting the perfect slice using only the freshest ingredients and 
+              time-honored recipes.
+            </p>
+<p>
+              Whether you're dining in, taking out, or ordering online, every pizza we make is a promise of quality, 
+              tradition, and a little extra love.
+            </p>
+<h3><span aria-hidden="true">💡</span> Why Choose Us?</h3>
+<ul>
+<li><span aria-hidden="true">🔥</span> Freshly baked pizzas every time</li>
+<li><span aria-hidden="true">🍅</span> Premium ingredients, locally sourced</li>
+<li><span aria-hidden="true">🚀</span> Fast delivery and easy online ordering</li>
+<li><span aria-hidden="true">❤️</span> 1000s of satisfied customers</li>
+</ul>
+</article>
+<figure class="story-image">
+<img alt="Our pizza making tradition" height="400" loading="lazy" src="https://media.istockphoto.com/id/840623040/photo/whats-your-story-typed-on-a-vintage-typewriter.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=Ii3_NSqQ_J4BnI8uhKqZ_qWNVZgP7mhkRD8ykXub33s=" width="600"/>
+</figure>
+</div>
+</div>
+</section>
+<section aria-label="Store locator" class="store-locator" id="locations">
+<div class="container">
+<h2 class="section-title"><span aria-hidden="true">📍</span> Find a PizzaHut Near You</h2>
+<div class="locator-search">
+<label class="visually-hidden" for="location-search"></label>
+<input id="location-search" placeholder="Search city by name or Pincode..." type="text"/>
+<button id="search-button" type="button">Search</button>
+</div>
+<div class="store-horizontal" id="store-results" role="list">
+<article class="store-item" role="listitem">
+<h3>PizzaHut - Hazratganj</h3>
+<address>91, Mahatma Gandhi Marg, opposite Governer House, Raj Bhavan Colony, Hazratganj, Lucknow</address>
+<p>📞 +91 18002022022</p>
+</article>
+<article class="store-item" role="listitem">
+<h3>PizzaHut - Mahanagar</h3>
+<address>Prem Jyoti Tower, B 939/A, Gole Market, Mahanagar, Lucknow</address>
+<p>📞 +91 8448191079</p>
+</article>
+<article class="store-item" role="listitem">
+<h3>PizzaHut - Gomti Nagar</h3>
+<address>Ground Floor, West End Mall, SN 8 to 10, Vibhuti Khand, Gomti Nagar, Lucknow</address>
+<p>📞 +91 7459979118</p>
+</article>
+<article class="store-item" role="listitem">
+<h3>PizzaHut - Golf city</h3>
+<address>2nd Floor, Food Court, Lulu Mall, Amar Shaheed Path, Golf City, Lucknow</address>
+<p>📞 +91 8527938787</p>
+</article>
+</div>
+</div>
+</section>
+<section aria-label="Newsletter and app" class="newsletter-app" id="contact">
+<div class="container">
+<div class="newsletter-app-content">
+<article class="newsletter">
+<h2><span aria-hidden="true">📬</span> Stay in the Loop</h2>
+<p>Sign up for our newsletter to get exclusive deals, new items &amp; PizzaHut news!</p>
+<form aria-label="Newsletter subscription" class="newsletter-form" id="newsletter-form">
+<label class="visually-hidden" for="newsletter-email">Email address</label>
+<input id="newsletter-email" placeholder="Enter your email" required="" type="email"/>
+<button type="submit">Subscribe</button>
+</form>
+</article>
+<article class="app-promo">
+<h2><span aria-hidden="true">📱</span> Get the App</h2>
+<p>Order faster, track your delivery, and enjoy rewards—all from our mobile app.</p>
+<div class="app-buttons">
+<a aria-label="Download on Google Play" href="https://play.google.com/store">
+<img alt="Google Play" height="40" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" width="135"/>
+</a>
+<a aria-label="Download on the App Store" href="https://www.apple.com/app-store/">
+<img alt="App Store" height="40" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" width="120"/>
+</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer" role="contentinfo">
+<div class="container footer-content">
+<div class="footer-column">
+<h2 class="footer-logo">
+<span aria-hidden="true">🍕</span> PizzaHut
+        </h2>
+<p>Bringing piping hot pizzas to your doorstep since 1958. Taste the tradition.</p>
+</div>
+<div class="footer-column">
+<h3>Quick Links</h3>
+<ul>
+<li><a class="footer-link" href="#menu">Menu</a></li>
+<li><a class="footer-link" href="#order">Order Now</a></li>
+<li><a class="footer-link" href="#deals">Deals</a></li>
+<li><a class="footer-link" href="#locations">Find a Store</a></li>
+</ul>
+</div>
+<div class="footer-column">
+<h3>Contact</h3>
+<address>
+<p>📞 18002022022</p>
+<p>✉️ <a class="footer-link" href="mailto:support@pizzahut.com">support@pizzahut.com</a></p>
+<p>🏢 12th Floor, Tower D, Global Business Park, Gurgaon, Haryana 122002</p>
+</address>
+</div>
+<div class="footer-column">
+<h3>Follow Us</h3>
+<div class="social-icons">
+<a aria-label="Facebook" class="social-link" href="https://facebook.com">
+<i aria-hidden="true" class="fab fa-facebook-f"></i>
+</a>
+<a aria-label="Instagram" class="social-link" href="https://instagram.com">
+<i aria-hidden="true" class="fab fa-instagram"></i>
+</a>
+<a aria-label="Twitter" class="social-link" href="https://twitter.com">
+<i aria-hidden="true" class="fab fa-x-twitter"></i>
+</a>
+<a aria-label="YouTube" class="social-link" href="https://youtube.com">
+<i aria-hidden="true" class="fab fa-youtube"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2025 PizzaHut. All rights reserved.</p>
+<nav aria-label="Legal links">
+<ul class="footer-legal">
+<li><a class="footer-link" href="privacy.html">Privacy Policy</a></li>
+<li><a class="footer-link" href="terms.html">Terms of Policy</a></li>
+<li><a class="footer-link" href="accessibility.html">Accessibility</a></li>
+</ul>
+</nav>
+</div>
+</footer>
+<div aria-label="Back to top" class="back-to-top" id="back-to-top">
+<i aria-hidden="true" class="fas fa-chevron-up"></i>
+<script defer="" src="script.js"></script>
+</div>
+<div aria-label="Pizza Assistant" class="chatbot-widget" id="chatbot">
+<button aria-label="Open chat" id="chatbot-toggle">💬</button>
+<div class="chatbot-window" hidden="">
+<div class="chatbot-header">PizzaBot 🍕</div>
+<div class="chatbot-messages" id="chatbot-messages"></div>
+<div class="chatbot-input">
+<input id="chatbot-input" placeholder="Type your message..." type="text"/>
+<button id="chatbot-send">➤</button>
+</div>
+</div>
+</div>
+<script>
+  const toggle = document.getElementById("chatbot-toggle");
+  const windowBox = document.querySelector(".chatbot-window");
+  const sendBtn = document.getElementById("chatbot-send");
+  const input = document.getElementById("chatbot-input");
+  const messages = document.getElementById("chatbot-messages");
+
+  toggle.addEventListener("click", () => {
+    windowBox.hidden = !windowBox.hidden;
+  });
+
+  sendBtn.addEventListener("click", sendMessage);
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") sendMessage();
+  });
+
+  function sendMessage() {
+    const text = input.value.trim();
+    if (!text) return;
+    addMessage("user", text);
+    respond(text.toLowerCase());
+    input.value = "";
+  }
+
+  function addMessage(sender, text) {
+    const msg = document.createElement("div");
+    msg.className = "chat-msg " + sender;
+    msg.textContent = text;
+    messages.appendChild(msg);
+    messages.scrollTop = messages.scrollHeight;
+  }
+
+  function respond(text) {
+    let response = "I'm just a simple pizza bot!";
+    if (text.includes("recommend")) response = "Try our Double Cheese Melt 🍕";
+    else if (text.includes("track")) response = "Please enter your Order ID on the tracking page.";
+    else if (text.includes("offer") || text.includes("promo")) response = "Use code FIRST50 for ₹50 off!";
+    else if (text.includes("hi") || text.includes("hello")) response = "Hi there! Hungry?";
+    addMessage("bot", response);
+  }
+</script>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js')
+    .then(() => console.log("Service Worker Registered"));
+}
+</script>
+<!-- Chat Icon -->
+<div id="chat-toggle" class="chat-icon" aria-label="Chat with us">
+  💬
+</div>
+
+<!-- Chat Window -->
+<div id="chat-window" class="chat-window hidden">
+  <div class="chat-header">Ask us anything!</div>
+  <div class="chat-body" id="chat-body">
+    <!-- Chat messages will appear here -->
+  </div>
+  <form id="chat-form" class="chat-form">
+    <input type="text" id="chat-input" placeholder="Type your message..." required />
+    <button type="submit">Send</button>
+  </form>
+</div>
+
+</body>
+</html>
