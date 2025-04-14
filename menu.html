@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Menu | Pizza Hut</title>
+<link href="style.css" rel="stylesheet"/>
+<style>
+    .menu-section {
+      padding: 4rem 1rem;
+      background-color: var(--bg-medium);
+      color: var(--text-light);
+    }
+    .menu-section:not(:last-child) {
+      border-bottom: 1px solid #333;
+    }
+    .menu-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      list-style: none;
+      padding: 2rem 0 0;
+      margin: 0;
+    }
+    .menu-list li {
+      background: var(--bg-light);
+      padding: 1rem;
+      border-radius: 1rem;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    .menu-list img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 0.75rem;
+      margin-bottom: 1rem;
+    }
+    .menu-list h4 {
+      margin: 0.5rem 0;
+      color: var(--primary);
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+<header class="header">
+<div class="container">
+<h1 class="logo"><span aria-hidden="true">🍕</span> Pizza Hut</h1>
+</div>
+</header>
+<main class="container">
+<section class="menu-section" id="pizza">
+<h2 class="section-title">Pizza</h2>
+<p>From our signature Pan Pizza to the cheesy Stuffed Crust, each bite is bursting with flavor. Choose from classics like Pepperoni, Margherita, or go wild with custom toppings to make it truly yours.</p>
+<ul class="menu-list">
+<li>
+<img alt="Classic Margherita Pizza" src="https://media.istockphoto.com/id/1279481289/photo/photo-of-mozzarella-cheese-pizza-with-sliced-u200b-u200bred-tomatoes-a-glass-of-red-wine-to.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=fgrRwqsx6ewVM8TkHeYvrT69WS1Ar7HO1oD4vvbr0jQ="/>
+<h4>Classic Margherita</h4>
+          ₹199
+        </li>
+<li>
+<img alt="Spicy Veggie Blast" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXqpcfPPtECVpIGBhxpTytkM0pBhH55P51Dw&amp;s"/>
+<h4>Spicy Veggie Blast</h4>
+          ₹249
+        </li>
+<li>
+<img alt="Double Cheese Melt" src="https://media.istockphoto.com/id/2189790465/photo/delicious-pizza-with-melted-cheese-being-lifted-by-spatula-on-wooden-table.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=w_aHpmUC1rN8opAqbB0CZ7cWQ3mkpgXCSidfkV1wGZQ="/>
+<h4>Double Cheese Melt</h4>
+          ₹279
+        </li>
+<li>
+<img alt="Chicken Tikka Supreme" src="https://media.istockphoto.com/id/2207360495/photo/tandoori-paneer-cheese-pizza.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=wao5ZJ3FrPKM9VlP5QLUNyh_4b0LbgoQOa5m1LbBbao="/>
+<h4>Cheese and Corn</h4>
+          ₹299
+        </li>
+</ul>
+</section>
+<section class="menu-section" id="sides">
+<h2 class="section-title">Sides</h2>
+<p>Craving more than just pizza? Explore our delicious sides that perfectly complement any meal. From crispy fries to cheesy garlic bread and juicy chicken wings—every bite is worth savoring.</p>
+<ul class="menu-list">
+<li>
+<img alt="Garlic Breadsticks" src="https://media.istockphoto.com/id/1869939603/photo/close-up-sliced-garlic-and-butter-bread-toast.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=-Y7Sm2eJCoc-teLaglheFKQcrfFzqOpX3R3-H6Prq3k="/>
+<h4>Garlic Breadsticks</h4>
+          ₹99
+        </li>
+<li>
+<img alt="Cheesy Garlic Bread" src="https://media.istockphoto.com/id/487219905/photo/toasted-cheese-and-garlic-bread.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=xtSkUMnkl1IUaahfWhS4uAtvFfHMgJLQwEsX_86Pve8="/>
+<h4>Cheesy Garlic Bread</h4>
+          ₹129
+        </li>
+<li>
+<img alt="Chicken Wings" src="https://media.istockphoto.com/id/522242705/photo/toasted-ravioli.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=YXQudq1ab_D7eebhzJF6A7zdXl5NGbXUyZvMhvue6u4="/>
+<h4>Fried Ravioli</h4>
+          ₹430
+        </li>
+<li>
+<img alt="Masala Fries" src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_728,h_546/k%2FPhoto%2FSeries%2F2022-03-how-to-garlic-knots%2F2022-03-01_ATK6450"/>
+<h4>Garlic Knots</h4>
+          ₹89
+        </li>
+</ul>
+</section>
+<section class="menu-section" id="desserts">
+<h2 class="section-title">Desserts</h2>
+<p>Indulge your sweet tooth with our rich and satisfying dessert selection. Perfect endings include our chocolate lava cake, brownies, and more.</p>
+<ul class="menu-list">
+<li>
+<img alt="Choco Lava Cake" src="https://media.istockphoto.com/id/918352352/photo/chocolate-fondant-cake.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=XnKEzb53Y2XeveohvAS5bJtgERYwtW58Hp_RRaK91J8="/>
+<h4>Choco Lava Cake</h4>
+          ₹99
+        </li>
+<li>
+<img alt="Brownie with Ice Cream" src="https://images.unsplash.com/photo-1597648152428-f883fbc9c873?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QnJvd25pZSUyMHdpdGglMjBJY2UlMjBDcmVhbXxlbnwwfHwwfHx8MA%3D%3D"/>
+<h4>Brownie with Ice Cream</h4>
+          ₹149
+        </li>
+<li>
+<img alt="Cinnamon Sticks" src="https://media.istockphoto.com/id/627994998/photo/tiramisu-dessert-on-a-porcelain-plate.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=ye8eBLGddQoHxhHAjvAJ6ydhJz_TloAxFd4qN6OAQPk="/>
+<h4>Tiramisu</h4>
+          ₹169
+        </li>
+</ul>
+</section>
+<section class="menu-section" id="drinks">
+<h2 class="section-title">Drinks</h2>
+<p>Stay refreshed! Choose from a range of chilled beverages that go hand-in-hand with our hot and cheesy pizzas.</p>
+<ul class="menu-list">
+<li>
+<img alt="Pepsi" src="https://media.istockphoto.com/id/1062831310/photo/pour-soft-drink-in-glass-with-ice-splash-on-dark-background.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=XlLTcFQ0FqcTWRa9QniHgpjlkdFrOJGJFGm5jg_TAAw="/>
+<h4>Pepsi (500ml)</h4>
+          ₹49
+        </li>
+<li>
+<img alt="Cocktail" src="https://thekitchencommunity.org/wp-content/uploads/2021/11/Mixed-Drinks.jpg"/>
+<h4>Cocktail </h4>
+          ₹49
+        </li>
+<li>
+<img alt="Mineral Water" src="https://images.unsplash.com/photo-1590179254221-6d65eabd2e74?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fG1pbmVyYWwlMjB3YXRlcnxlbnwwfHwwfHx8MA%3D%3D"/>
+<h4>Mineral Water</h4>
+          ₹30
+        </li>
+<li>
+<img alt="Family Drink Pack" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg6bgssECFfUxppHnuOPLoCPcaSuKFGnKMkg&amp;s"/>
+<h4>2L Family Drink Pack</h4>
+          ₹120
+        </li>
+</ul>
+</section>
+</main>
+<footer class="footer">
+<div class="container">
+<p>© 2025 Pizza Hut. All rights reserved.</p>
+</div>
+</footer>
+</body>
+</html>
